@@ -69,13 +69,14 @@ h2{
     margin: 26px 0 20px 0;
 }
 
-h3{
+.preparationHeadline{
     font-weight: 600;
     color: #7B284F;
     font-size: 20.5px;
     margin: 0;
     height: 26px;
     padding-bottom: 4px;
+    font-family: "Outfit", serif;
     
 }
 
@@ -112,7 +113,7 @@ ol li::marker{
 
 .preparationList li, .ingredientsList li, .instructionsList li{
     margin-top: 12px;
-    text-indent: 12px;
+    padding-left: 12px;
 }
 
 .instructionsList li{
