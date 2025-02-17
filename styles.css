@@ -1,0 +1,151 @@
+html,body,figure{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", serif;
+    color: #5F574E;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3E5D8;
+    padding: 123px 0;
+}
+
+.recipeCard{
+    padding: 40px 40px 29px 40px;
+    max-width: 736px;
+    background-color: #FFF;
+    border-radius: 23px;
+    box-sizing: border-box;
+}
+
+figure{
+    height: 300px;
+}
+
+
+img{
+    border-radius: 10px;
+    width: 656px;
+}
+
+h1,h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1{
+    color: #302D2C;
+    font-size: 40px;
+    margin: 32px 0 15px 0;
+    height: 56px;
+
+}
+
+.description{
+    line-height: 25px;
+    margin: 0 0 31px 0;
+}
+
+h2{
+    font-size: 28px;
+    height: 40px;
+    color: #854632;
+}
+
+.ingredientsHeadline{
+    margin: 27px 0 20px 0;
+}
+
+.instructionsHeadline{
+    margin: 26px 0 18px 0;
+}
+
+.nutritionHeadline{
+    margin: 26px 0 20px 0;
+}
+
+h3{
+    font-weight: 600;
+    color: #7B284F;
+    font-size: 20.5px;
+    margin: 0;
+    height: 26px;
+    padding-bottom: 4px;
+    
+}
+
+.preparationSection{
+    background-color: #FFF5FA;
+    padding: 24px 26px 29px 28px;
+
+}
+
+ul li::marker, ol li::marker{
+    color: #854632; 
+}
+
+ol li::marker{
+    font-weight: 700;
+}
+
+
+.preparationList, .ingredientsList, .instructionsList{
+    margin: 0;
+    padding-left: 28px;
+}
+
+.ingredientsList{
+    border-bottom: 1px solid #E4DED8;; /* 1px solid gray line */
+    padding-bottom: 33px; /* Space between list and line */
+}
+
+.instructionsList{
+    border-bottom: 1px solid #E4DED8;; /* 1px solid gray line */
+    padding-bottom: 31px; /* Space between list and line */
+}
+
+
+.preparationList li, .ingredientsList li, .instructionsList li{
+    margin-top: 12px;
+    text-indent: 12px;
+}
+
+.instructionsList li{
+    margin-top: 8px;
+    line-height: 24px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.tableDescription{
+    margin: 0 0 14px 0;
+}
+
+th{
+    font-weight: 400;
+    padding: 14px 246px 13px 32px;
+    text-align: left;
+}
+
+td{
+    padding: 14px 0 13px 0;
+    width: 100%;
+    text-align: left;
+    color: #854632;
+    font-weight: 700;
+}
+
+tr{
+    border-bottom: 1px solid #E4DED8;; 
+}
+
+tr:last-child{
+    border-bottom: none;
+}
