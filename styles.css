@@ -15,6 +15,7 @@ main{
 
 .recipeCard{
     padding: 40px 40px 29px 40px;
+    width: 100%;
     max-width: 736px;
     background-color: #FFF;
     border-radius: 23px;
@@ -22,20 +23,20 @@ main{
 }
 
 figure{
-    height: 300px;
+    height: 100%;
+    max-height: 300px;
 }
-
 
 img{
     border-radius: 10px;
-    width: 656px;
+    width: 100%;
+    max-width: 656px;
 }
 
 h1,h2{
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 h1{
@@ -43,7 +44,6 @@ h1{
     font-size: 40px;
     margin: 32px 0 15px 0;
     height: 56px;
-
 }
 
 .description{
@@ -77,13 +77,12 @@ h2{
     height: 26px;
     padding-bottom: 4px;
     font-family: "Outfit", serif;
-    
 }
 
 .preparationSection{
     background-color: #FFF5FA;
     padding: 24px 26px 29px 28px;
-
+    border-radius: 10px;
 }
 
 ul li::marker, ol li::marker{
@@ -94,22 +93,20 @@ ol li::marker{
     font-weight: 700;
 }
 
-
 .preparationList, .ingredientsList, .instructionsList{
     margin: 0;
     padding-left: 28px;
 }
 
 .ingredientsList{
-    border-bottom: 1px solid #E4DED8;; /* 1px solid gray line */
-    padding-bottom: 33px; /* Space between list and line */
+    border-bottom: 1px solid #E4DED8;; 
+    padding-bottom: 33px; 
 }
 
 .instructionsList{
-    border-bottom: 1px solid #E4DED8;; /* 1px solid gray line */
-    padding-bottom: 31px; /* Space between list and line */
+    border-bottom: 1px solid #E4DED8;; 
+    padding-bottom: 31px; 
 }
-
 
 .preparationList li, .ingredientsList li, .instructionsList li{
     margin-top: 12px;
@@ -131,7 +128,7 @@ table{
 
 th{
     font-weight: 400;
-    padding: 14px 246px 13px 32px;
+    padding: 14px clamp(32px, 30vw, 246px) 13px 32px;
     text-align: left;
 }
 
@@ -149,4 +146,44 @@ tr{
 
 tr:last-child{
     border-bottom: none;
+}
+
+
+@media (max-width: 736px){
+    main{
+        padding: 0;
+    }
+
+    .recipeCard{
+        border-radius: 0;
+    }
+
+}
+
+@media (max-width: 580px){
+    .recipeCard{
+        padding: 0;
+    }
+    
+    header, section{
+        padding: 0 32px;
+    }
+
+    h1{
+        height: max-content;
+        font-size: 35px;
+    }
+
+    .recipeCard:last-child{
+        padding-bottom: 32px;
+    }
+
+    .preparationSection{
+        margin: 0 32px
+    }
+
+    img{
+        border-radius: 0;
+    }
+   
 }
